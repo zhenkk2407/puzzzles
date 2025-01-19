@@ -6,12 +6,14 @@ body {
     padding: 0;
     background-color: #0b0b0b;
     color: white;
+    background-image: url("bodyf.jpg");
+    background-size: cover; 
 }
 *{
     box-sizing: border-box;
 }
 header{
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
     display: flex;
@@ -19,16 +21,20 @@ header{
     align-items: center;
     margin: 1em;
     z-index: 100;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20%;
+    
 }
 .history{
-    margin-right: 4em;
+    margin-right: 2em;
 }
+
 
 .fon {
     margin-top: 0;
     margin-left: 0;
     width: 100vw; 
-    height: 70vh;
+    height: 75vh;
     object-fit: cover; 
     z-index: -1; 
     filter: brightness(60%);
@@ -52,6 +58,9 @@ header{
     height: 75vh;
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
 }
+.h1-container {
+    background-color: rgba(0, 0, 0, 1);
+}
 
 .h1-container h1 {
     position: absolute;
@@ -67,6 +76,7 @@ header{
     font-size: 4rem;
 }
 .oglav{
+    background-color:  rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: row;
     margin-left: 3em;
@@ -78,7 +88,6 @@ header{
 .oglav h2{
     font-family: "Press Start 2P", serif;
     color: #d7cae2;
-    stroke: #0b0b0b;
     text-shadow:   
             0 0 20px #411669,
             0 0 40px #8a2be2,
@@ -89,6 +98,7 @@ header{
 }
 .oglav ul{
     flex-grow:2;
+    
 }
 
 a:not(.history){
@@ -105,8 +115,8 @@ a:hover {
 .round_photo{
     border-radius: 50%; 
     object-fit: cover;
-    width: 700px; 
-    height: 700px;   
+    width: 650px; 
+    height: 650px;   
     box-shadow: 
         0 0 5px #8a2be2,
         0 0 20px #8a2be2,
@@ -115,10 +125,7 @@ a:hover {
         0 0 80px #00ffff;
     animation: neonGlow 2s infinite alternate; 
 }
-.sudoku{
-    margin-left: -10%; 
-    margin-top: 3em;
-}
+
 @keyframes neonGlow {
     from {
         box-shadow: 
@@ -136,4 +143,38 @@ a:hover {
             0 0 60px #8a2be2,
             0 0 100px #00ffff;
     }
+}
+
+.puzzles {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 0px; /* Расстояние между секциями */
+    margin: 20px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center; 
+    gap: 20px;
+}
+
+.sudoku{
+    margin-left: -10%; 
+    margin-top: 3em;
+}
+.tetris{
+    margin-left: 20%;
+    margin-top: 3em;
+}
+.sapyor{
+    margin-left: 20%;
+    margin-top: 3em;
+}
+p{
+    text-indent: 1em;
+}
+h3{
+    text-indent: 1em;
+    font-size: 2.6rem;
 }
