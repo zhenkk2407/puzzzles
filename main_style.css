@@ -1,30 +1,28 @@
 body {
+    background-color: #0b0b0b;
+    background-image: url("bodyf.jpg");
+    background-size: cover;
+    color: white;
     font-family: "Comfortaa", serif;
     font-size: 1.2rem;
     line-height: 1.7em;
     margin: 0;
     padding: 0;
-    background-color: #0b0b0b;
-    color: white;
-    background-image: url("bodyf.jpg");
-    background-size: cover; 
 }
-*{
-    box-sizing: border-box;
-}
+
 header{
-    position: fixed;
-    right: 0;
-    left: 0;
-    display: grid;
-    grid-template-columns: 3em 6.25em auto 16em;
-    gap: 10px;
-    align-items: center; 
-    margin: 1em;
-    z-index: 100;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 3em 6.25em auto 16em;
     height: 70px;
+    left: 0;
+    margin: 1em;
+    position: fixed;
+    right: 0;
+    z-index: 100;
     
 }
 
@@ -72,7 +70,7 @@ header{
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
 }
 .h1-container {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: black;
 }
 
 .h1-container h1 {
@@ -119,10 +117,6 @@ a{
     position: relative;
     transition: color 0.3s ease;
 }
-a:hover {
-    color: #badc5c;
-  }
-
 
 .round_photo{
     border-radius: 50%; 
@@ -160,7 +154,7 @@ a:hover {
 .puzzles {
     display: grid;
     grid-template-rows: repeat(5, auto);
-    gap: 0px; 
+    gap: 0; 
     margin: 20px;
 }
 
@@ -183,7 +177,6 @@ h3{
 }
 .form-container {
     background-color: rgba(151, 18, 199, 0.9);
-    padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 1000px;
@@ -229,9 +222,11 @@ font-size: 14px;
     font-weight: bold;
 }
 
-.form-group button[type="submit"]:hover {
+.form-group button[type="submit"]:hover, a:hover {
     background-color: #badc5c;
 }
+
+
 .forma{
     display: flex;
     flex-direction: row;
