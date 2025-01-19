@@ -101,7 +101,7 @@ header{
     
 }
 
-a:not(.history){
+a{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     position: relative;
@@ -115,8 +115,8 @@ a:hover {
 .round_photo{
     border-radius: 50%; 
     object-fit: cover;
-    width: 650px; 
-    height: 650px;   
+    width: 600px; 
+    height: 600px;   
     box-shadow: 
         0 0 5px #8a2be2,
         0 0 20px #8a2be2,
@@ -181,7 +181,7 @@ h3{
 .form-container h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #000000;
+    color: #badc5c;
 }
 
 .form-group {
@@ -220,7 +220,7 @@ font-size: 14px;
 .form-group button[type="submit"]:hover {
     background-color: #badc5c;
 }
-.form1{
+.forma{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -231,4 +231,21 @@ font-size: 14px;
 footer p{
     text-align: center;
     white-space: nowrap;
+}
+
+.content2 ul{
+    margin: 10px 0;
+    padding-left: 1em;
+}
+
+.content2 {
+    max-width: 90%;
+    margin: 1em auto;
+    padding: 2em;
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.content2 h1{
+    font-family:"Press Start 2P", serif;
 }
