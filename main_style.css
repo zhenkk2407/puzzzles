@@ -25,7 +25,7 @@ header{
     border-radius: 20%;
     
 }
-.history{
+.history,.back{
     margin-right: 2em;
 }
 
@@ -79,9 +79,8 @@ header{
     background-color:  rgba(0, 0, 0, 0.7);
     display: flex;
     flex-direction: row;
-    margin-left: 3em;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin: 1em 6em;
 }
 
@@ -170,7 +169,7 @@ h3{
     font-size: 2.6rem;
 }
 .form-container {
-    background-color: rgba(151, 18, 199, 0.7);
+    background-color: rgba(151, 18, 199, 0.9);
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -244,8 +243,33 @@ footer p{
     padding: 2em;
     background: rgb(0, 0, 0, 0.5);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .content2 h1{
     font-family:"Press Start 2P", serif;
+}
+
+.message-container {
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%;
+    margin-top: 20%;
+}
+
+.succes{
+    font-family: "Comfortaa", serif;
+    font-size: 1.5rem;
+    line-height: 1.7em;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b0b;
+    color: white;
+    background-image: url("bodyf.jpg");
+    background-size: cover; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    height: 100vh;
 }
