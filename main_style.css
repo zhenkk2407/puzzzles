@@ -1,6 +1,7 @@
 body {
-    font-family: Comfortaa;
-    line-height: 1.6;
+    font-family: "Comfortaa", serif;
+    font-size: 1.5rem;
+    line-height: 1.7em;
     margin: 0;
     padding: 0;
     background-color: #0b0b0b;
@@ -56,13 +57,49 @@ header{
     position: absolute;
     bottom: 28%; 
     left: 5%; 
-    font-size: 4.5rem;
-    font-weight: bold;
+    font-size: 4.6rem;
     max-width: 70%;
     animation: fadeIn 2s ease-in-out forwards; 
     line-height: 1.3em;
 }
+.top5{
+    font-family: "Press Start 2P", serif;
+    font-size: 4rem;
+}
+.oglav{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 6em;
+}
 
+.oglav h2{
+    font-family: "Press Start 2P", serif;
+    color: #d7cae2;
+    stroke: #0b0b0b;
+    text-shadow:   
+            0 0 20px #411669,
+            0 0 40px #8a2be2,
+            0 0 60px #8a2be2;
+    flex-grow:1.5;
+    font-size: 1.5em;
+   
+}
+.oglav ul{
+    flex-grow:2;
+}
+
+a:not(.history){
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: #badc5c;
+  }
 
 
 .round_photo{
