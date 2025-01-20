@@ -59,16 +59,6 @@ header{
         opacity: 1; 
     }
 }
-
-.fon::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw; 
-    height: 75vh;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1) 100%);
-}
 .h1-container {
     background-color: black;
 }
@@ -206,6 +196,7 @@ padding: 8px 10px;
 border: 1px solid #ccc;
 border-radius: 5px;
 font-size: 14px;
+box-sizing: border-box; 
 }
 
 .form-group input:focus {
@@ -222,7 +213,11 @@ font-size: 14px;
     font-weight: bold;
 }
 
-.form-group button[type="submit"]:hover, a:hover {
+a:hover {
+    color: #badc5c;
+}
+
+.form-group button[type="submit"]:hover{
     background-color: #badc5c;
 }
 
